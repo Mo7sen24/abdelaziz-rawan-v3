@@ -88,7 +88,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 <script>
 /* خلفية موسيقية: بتشتغل أول ما الضيف يدوس على زر فتح الدعوة */
 (function () {
-  var audio = new Audio('song.mp3');
+  var audio = new Audio('song12.mp3');
   audio.loop = true;
   audio.preload = 'auto';
   var started = false;
@@ -101,7 +101,7 @@ html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
     document.removeEventListener('click', start, true);
     document.removeEventListener('touchend', start, true);
     var p = audio.play();
-    if (p && p.catch) p.catch(function (err) { console.warn('song.mp3 failed to play:', err); });
+    if (p && p.catch) p.catch(function (err) { console.warn('song12.mp3 failed to play:', err); });
   }
 
   document.addEventListener('click', start, true);
